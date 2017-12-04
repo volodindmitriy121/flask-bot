@@ -25,7 +25,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url="https://herokuProject_url/bot")
+    bot.set_webhook(url="https://eyezen-bot-flask.herokuapp.com/bot")
     return "!", 200
 
 server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
